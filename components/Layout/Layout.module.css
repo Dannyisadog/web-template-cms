@@ -1,0 +1,7 @@
+.main {
+  @apply ml-48 flex justify-center items-center h-screen
+}
+
+.alert_container {
+  @apply absolute right-0 top-24 flex flex-col items-end pr-8
+}

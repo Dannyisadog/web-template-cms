@@ -1,0 +1,7 @@
+{
+   "functions": {
+      "pages/api/mail/recoveryPassword.ts": {
+         "includeFiles": "template/recoveryPassword.hbs"
+      }
+   }
+}

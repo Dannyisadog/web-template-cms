@@ -1,0 +1,37 @@
+.nav {
+  @apply absolute py-6 px-4 text-[#f0f0f0] flex flex-col justify-between items-center z-40 top-0 left-0 w-48 h-screen bg-white shadow-2xl
+}
+
+.top_container,
+.bottom_container {
+  @apply flex flex-col items-center
+}
+
+.top_container {
+  @apply w-full items-center
+}
+
+.bottom_container {
+  @apply items-center w-full
+}
+
+.user_name {
+  @apply text-primary
+}
+
+.singout_button {
+  @apply duration-300 border rounded w-full p-1 mt-2 cursor-pointer flex items-center justify-center text-primary border-primary hover:bg-primary hover:text-white
+}
+
+.logo {
+  @apply text-xl text-primary py-1 px-4 rounded w-full flex justify-center items-center
+}
+
+.item_container {
+  @apply flex flex-col justify-between items-center h-full mt-8 w-full
+}
+
+.link {
+  @apply duration-300 cursor-pointer w-full h-10 flex justify-center items-center
+   rounded-xl mt-4 first:mt-0 text-sm
+}

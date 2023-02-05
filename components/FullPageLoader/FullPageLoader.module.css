@@ -1,0 +1,3 @@
+.container {
+  @apply fixed duration-300 w-screen h-screen left-0 top-0 flex justify-center items-center
+}

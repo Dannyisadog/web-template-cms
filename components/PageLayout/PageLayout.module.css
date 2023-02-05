@@ -1,0 +1,11 @@
+.container {
+  @apply duration-300 p-4 bg-white w-[95%] h-[95vh] rounded-xl shadow-xl
+}
+
+.header {
+  @apply flex justify-between items-center
+}
+
+.title {
+  @apply text-3xl text-[#444] font-bold
+}

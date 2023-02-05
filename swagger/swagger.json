@@ -1,0 +1,140 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Web Template CMS",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/auth/users": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "get user's by page and perPage",
+        "description": "get users",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "page",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "name": "perPage",
+            "in": "query",
+            "description": "data count in per page",
+            "required": false,
+            "type": "number"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "create user",
+        "description": "create a user",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "request body",
+            "required": true,
+            "type": "object",
+            "schema": {
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "John Doe",
+                  "description": "user name"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "test@mail.com",
+                  "description": "user email"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "11111111",
+                  "description": "user password"
+                },
+                "passwordConfirm": {
+                  "type": "string",
+                  "example": "11111111",
+                  "description": "user password confirm"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "user"
+        ],
+        "summary": "modify user's data by email",
+        "description": "modify user's data",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "request body",
+            "required": true,
+            "type": "object",
+            "schema": {
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "John Doe",
+                  "description": "user name"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "test@mail.com",
+                  "description": "user email"
+                },
+                "image": {
+                  "type": "string",
+                  "example": "https://link.com",
+                  "description": "user image"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "user"
+        ],
+        "summary": "soft delete user by email",
+        "description": "delete specific user",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "request body",
+            "required": true,
+            "type": "object",
+            "schema": {
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "example": "test@mail.com",
+                  "description": "user email"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

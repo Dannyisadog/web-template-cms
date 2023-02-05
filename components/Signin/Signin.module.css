@@ -1,0 +1,60 @@
+.signin_page,
+.done_page {
+  @apply w-screen h-screen flex items-center absolute overflow-hidden
+}
+
+.container {
+  @apply w-72 mt-4
+}
+
+.left_container {
+  @apply w-3/5 h-full bg-primary flex-shrink-0 flex justify-center items-center
+}
+
+.right_container {
+  @apply flex justify-center items-center w-full relative
+}
+
+.signin_container {
+  @apply w-[80%] flex flex-col items-center justify-center bg-white py-24 rounded-2xl
+}
+
+.credential_container {
+  @apply flex flex-col
+}
+
+.register_container {
+  @apply flex justify-between items-center mt-4 text-xs relative right-0 text-primary
+}
+
+.input {
+  @apply h-10 w-72 mt-4 first:mt-0 p-2 text-base rounded border border-primary
+}
+
+.signin_button_container {
+  @apply mt-4 first:mt-0
+}
+
+.signin_button {
+  @apply duration-300 w-full h-12 border-[1px] border-[#f0f0f0] rounded hover:bg-[#f0f0f0] hover:text-[#333]
+}
+
+.err_msg {
+  @apply text-sm text-[#ff4c4c]
+}
+
+.credential_button {
+  @apply border-primary text-primary hover:bg-primary border hover:text-[#f0f0f0]
+}
+
+.bg_image {
+  @apply rounded-full animate-bounce
+}
+
+.title {
+  @apply text-4xl rounded-xl text-white text-center tracking-widest italic border-2 p-4 font-bold
+}
+
+.recovery_password_container {
+  @apply absolute z-10 rounded-2xl left-0 top-0 w-[100%] h-screen flex justify-center items-center duration-300
+}
